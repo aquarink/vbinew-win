@@ -81,10 +81,17 @@
         </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3" style="padding-left: 0px">
+        <form>
+            <select class="form-control" onChange="window.location.href=this.value">
+                <option>Pilih Room</option>
+                <option value="{{URL::asset('/chat/room/1')}}">Room 1</option>
+            </select>
+        </form>
+        <br>
         <div class="panel panel-primary">
             <div class="panel-collapse" id="collapseOne">
-                <div class="panel-body">
+                <div class="panel-body"  style="height: 385px">
                     <ul class="chat">
                         <li class="left clearfix"><span class="chat-img pull-left">
                                 <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />

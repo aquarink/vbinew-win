@@ -2,6 +2,7 @@
 
 Route::get('/', 'MemberController@index');
 Route::get('/chat', 'ChatController@index');
+Route::get('/chat/room/{id}', 'ChatController@index');
 Route::get('/hasil', 'HasilController@index');
 Route::get('/jadwal', 'JadwalController@index');
 Route::get('/tambahjadwal', 'JadwalController@tambahjadwal');
@@ -18,5 +19,8 @@ Route::get('/daftar', 'MemberController@daftar');
 Route::get('/masuk', 'MemberController@masuk');
 
 Route::get('/admin', 'Admin\PersonelController@index');
-Route::get('/adminhome', 'Admin\DataController@index');
+Route::get('/admin/home', 'Admin\DataController@index');
+
+// Proses
+Route::post('daftar', 'MemberController@prosesDaftar');
 

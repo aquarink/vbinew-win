@@ -32,8 +32,11 @@
         {!! Html::style('/layout/css/navbar-fixed-top.css') !!}
 
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-        {!! Html::script('/layout/js/ie-emulation-modes-warning.js') !!}
+        {!! Html::script('/layout/js/ie-emulation-modes-warning.js') !!}    
         
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        
+        <script type="text/javascript">var baseUrl = "{{ url('/') }}"</script>
     </head>
 
     <body>
@@ -100,8 +103,9 @@
 
         @yield('container')
 
-        <!-- Javascript -->
-        {!! Html::script('/layout/js/jquery-1-11-3.js') !!}
+        <!-- jQuery -->
+        
+        <!-- Bootstrap JS -->
         {!! Html::script('/layout/js/bootstrap.min.js') !!}
 
         <!-- Javascript Costom -->

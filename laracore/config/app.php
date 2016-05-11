@@ -204,6 +204,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Illuminate\Html\HtmlFacade::class,
         'Html' => Illuminate\Html\HtmlFacade::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
     ],
 
 ];
